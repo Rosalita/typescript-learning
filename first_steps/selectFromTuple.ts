@@ -12,6 +12,7 @@ function names(arr: [string, number][]): string[] {
 
 // the type of an array of number can be written number[] or Array<number>
 // an array of tuple can be written as Array<[type1, type2]>
+// arrays defined this way are called Generic arrays
 function names2(arr: Array<[string, number]>): Array<string> {
   let allNames: Array<string> = []
   arr.forEach((item: [string, number]) => { allNames.push(item[0]); })
