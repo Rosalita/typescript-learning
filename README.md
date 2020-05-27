@@ -31,6 +31,8 @@ Often you will need to check the result of a single expression.
 This can be done using a command prompt, where an expression can be typed to get immediate output.
 `ts-node` is recommended and can be installed with `npm install ts-node`
 
+To run typescript `ts-node file.ts`
+
 It's strongly recommended to use a linter for TypeScript as it will catch errors that the compiler can't.
 `typescript-eslint` is recommended.
 
