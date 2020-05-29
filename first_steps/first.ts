@@ -1,14 +1,9 @@
-import * as http from "http";
+// Write a function first<T> that returns the first element of an array. 
+// It should be generic, working with any element type.
 
-const hostname = '127.0.0.1';
-const port = 3000;
+function first<T>(arr: Array<T>): T{
+    return arr[0]
+}
 
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World');
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
+console.log(first([1,2,3,5]))
+console.log(first(["foo", "bar", "baz"]))
