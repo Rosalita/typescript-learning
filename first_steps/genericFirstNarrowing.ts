@@ -2,7 +2,7 @@
 // It should work for generic arrays, no matter the element type. 
 // If we pass a single element, it should return just that element.
 
-function first<T>(arg1 : T | Array<T>): T {
+function myfirst<T>(arg1 : T | Array<T>): T {
     if(Array.isArray(arg1)){
         return arg1[0]
     }
