@@ -31,6 +31,9 @@ Often you will need to check the result of a single expression.
 This can be done using a command prompt, where an expression can be typed to get immediate output.
 `ts-node` is recommended and can be installed with `npm install ts-node`
 
+It's also worth noting that `npx` can be used to run binaries from modules that are installed locally in node_modules.
+If ts-node is installed locally, it can be used with `npx ts-node`
+
 To run typescript `ts-node file.ts`
 
 It's strongly recommended to use a linter for TypeScript as it will catch errors that the compiler can't.
